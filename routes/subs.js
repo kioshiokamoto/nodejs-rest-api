@@ -1,8 +1,10 @@
 import express from 'express';
 const router = express.Router();
-import Subscriber from '../models/Subscriber.js';
+
 import getSuscriber from '../middleware/suscriber.js';
+
 import { deleteSub, getAllSubs, getSub, postSub, updateSub } from '../controllers/subscriber.js';
+
 // Get all subscribers
 router.get('/', getAllSubs);
 
